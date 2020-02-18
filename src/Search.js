@@ -14,7 +14,7 @@ export default class Search extends React.Component{
     searchPoke = () => {
         this.setState({onCall: true});
         var self = this;
-        axios.get("http://pokeapi.co/api/v2/pokemon/"+this.state.pokeSearch.toLowerCase())
+        axios.get("http://pokeapi.co/api/v2/pokemon/"+this.state.pokeSearch.toLowerCase()) //Usando a biblioteca axios eu consigo capturar o json da api
         .then(function(response){
             console.log(response.data)
             self.setState({data: response.data});
