@@ -10,7 +10,7 @@ export default class SearchBody extends React.Component{
         }
         return(
             <ImageBackground style={styles.background} source={{uri: "https://pokemongolive.com/img/posts/raids_loading.png"}}>
-                <ScrollView>
+            <ScrollView>
                 <Text style={styles.header}>#{pokemon.id} - {pokemon.name.toUpperCase()}</Text>
                 <View style={styles.viewStyle}>
                     <Image source={{uri: pokemon.sprites.front_default}} style={styles.img}/>
